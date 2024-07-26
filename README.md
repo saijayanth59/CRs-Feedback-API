@@ -3,8 +3,10 @@
 This API allows users to retrieve and submit feedback for various subjects and teachers.
 
 
-## Endpoints
-
+### Endpoint
+```
+https://src.pythonanywhere.com
+```
 
 ```http
 GET /feedback/
@@ -71,6 +73,10 @@ A JSON object representing the feedback to be submitted.
 }
 ```
 
+## Registering a CR
+Login using admin credentials at  `/admin/`
+
+
 ## Setup and Installation
 Install the required dependencies.
    ```sh
@@ -83,13 +89,10 @@ Install the required dependencies.
    python3 manage.py runserver
    ```
    
-2. The API will be available at `http://localhost:8000/feedback/`.
+2. The API endpoint will be available at `http://localhost:8000`.
 
-## Registering a CR
-Login using admin credentials
-`http://localhost:8000/admin/`
 
-To create an admin
+To create an admin locally
 ```sh
 python3 manage.py createsuperuser
 ```
