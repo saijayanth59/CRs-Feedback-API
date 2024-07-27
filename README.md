@@ -17,6 +17,21 @@ Retrieve all feedback entries.
 #### Response
 A JSON array of feedback objects.
 
+
+#### Query Parameters
+
+| Parameter      | Description                                                      | Example           |
+|----------------|------------------------------------------------------------------|-------------------|
+| `section` | Filter by Student's Section | `A`, `E`, ...        |
+| `batch`      | Filter by Batch      | `E1`, `E2`, ...               |
+| `subject`      | Filter by Subject's name                           | `CLA`, `MEFA`, ...              |
+| `teacher` | Filter by Teacher's name                                   | `Harinadha bro`             |
+| `taken`        | Filter by taken | `true`, `false`            |
+| `year` | Filter by year  | `2024` |
+| `month` | Filter by month | `07` |
+| `day` | Filter by day  | `23` |
+| `date` | Filter by date | `2024-07-23` |
+
 ##### Sample Response
 ```json
 [
@@ -66,10 +81,10 @@ A JSON object representing the feedback to be submitted.
 ```json
 {
     "id_number": "RXXXXXX",
-    "subject": "APIs",
-    "teacher": "X sir",
+    "subject": "Math",
+    "teacher": "sir",
     "taken": true, 
-    "remarks": "good"
+    "remarks": "sir is good"
 }
 ```
 
