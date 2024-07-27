@@ -9,6 +9,8 @@ class FeedbackFilter(filters.FilterSet):
     month = filters.NumberFilter(field_name='created__month')
     day = filters.NumberFilter(field_name='created__day')
     date = filters.DateFilter(field_name='created__date')
+    start_date = filters.DateFilter(field_name="created", lookup_expr='gte')
+    end_date = filters.DateFilter(field_name="created", lookup_expr='lte')
 
     class Meta:
         model = Feedback
