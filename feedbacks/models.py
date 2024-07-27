@@ -10,7 +10,7 @@ class User(AbstractUser):
         ("E4", "E4"),
     ]
     year = models.CharField(max_length=5, choices=YEAR_CHOICES)
-    section = models.CharField(max_length=3) 
+    section = models.CharField(max_length=3)
 
 
 class Feedback(models.Model):
@@ -19,5 +19,4 @@ class Feedback(models.Model):
     teacher = models.CharField(max_length=50)
     taken = models.BooleanField()
     remarks = models.TextField()
-    created = models.DateTimeField(auto_now_add=True)
-    
+    created = models.DateField(auto_now_add=True)
